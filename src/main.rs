@@ -85,7 +85,7 @@ fn main() {
     fn status() {
         let mut file =
             File::open("/sys/class/leds/system76_acpi::kbd_backlight/brightness").unwrap();
-        let mut contents = String::new();
+        let mut contents = String::default();
         file.read_to_string(&mut contents).unwrap();
         //convert to u8
         let contents: u8 = contents.trim().parse().unwrap();
