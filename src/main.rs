@@ -5,7 +5,6 @@ use std::fs::File;
 use std::io::{Read, Write};
 
 fn main() {
-
     //get options
     let args: Vec<String> = std::env::args().collect();
     let mut opts = getopts::Options::new();
@@ -56,7 +55,6 @@ fn main() {
         off();
         return;
     }
-
 
     //functions
     //increase keyboard backlight
